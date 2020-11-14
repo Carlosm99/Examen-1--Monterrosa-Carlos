@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="mispelisfavoritas()">
+    <p style="background-color: greenyellow; height: 38px">
+      Usando DOM y formularios
+    </p>
+    <div><hr style="height: 3px; background-color: gray" /></div>
+    <!-------------Normal Just including data-->
+    <p>
+      
+      <label>Nombre:<p  id="nom"></p></label><br />            
+      <button onclick="nombre()">Agregar</button>
+      <br />
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+    </p>
+    <div><hr style="height: 3px; background-color: gray" /></div>
+    <p>
+      <label>Número de control:<p  id="nocontrol"></p></label><br />
+      <button onclick="nocontrol()">Agregar</button>
+      <br />
+      <input
+        type="number"
+        id="numcontrol"
+        placeholder="17390747"
+        value="17390747"
+      />
+    </p>
+
+    <!-------------form for favorite character-->
+    <div><hr style="height: 3px; background-color: gray" /></div>
+    <form onsubmit="return personajesfav();">
+      <p>
+        <label>Personajes favoritos</label><br />
+        <br />
+        <input type="text" id="dato" placeholder="Personaje Favorito" />
+      </p>
+      <p>
+        <input type="submit" />
+      </p>
+    </form>
+    <p class="myWorkHolders" id="valorespersonfav"></p>
+    <br />
+
+    <!-------------deleting and selecting movies-->
+    <div><hr style="height: 3px; background-color: gray" /></div>
+    <p>Películas favoritas</p>
+
+    <input type="text" id="agregar" placeholder="Peliculas Favoritas" />
+    <button onclick="agregarlista()">Agregar</button><br /><br />
+    <div class="row">
+      <div class="column1" style="background-color: #18ecdb">
+        <p>
+          <i class="material-icons" style="font-size: 28px">local_library</i
+          >Lista de peliculas
+        </p>
+
+        <select class="select" id="myList" size="2" multiple>
+          <option>Un mundo feliz</option>
+
+          <option>La vida inútil de Pito Pérez</option>
+
+          <option>El club de la pelea</option>
+        </select>
+
+        <!-----  <button class="agregaraddd">Agrege a la lista de favoritos<i class="material-icons"style="font-size:48px;">arrow_drop_down</i></button><br>---->
+
+        <p>
+          Para añadir una película seleccione y de manera automática se agregará
+          a la lista de películas favoritas
+        </p>
+      </div>
+
+      <br />
+      <br />
+      <div class="column3">
+        <i class="material-icons" style="font-size: 48px">arrow_downward</i>
+      </div>
+
+      <div class="column2" style="background-color: #e9b50d">
+        <p>
+          <i class="material-icons" style="font-size: 28px">local_movies</i>
+          Lista de peliculas favoritas
+        </p>
+        <select class="select" id="myListofavmov" size="2" multiple></select
+        ><br />
+        <br />
+        <button class="eliminar" onclick="eliminar()">
+          <i class="material-icons" style="font-size: 28px; color: red"
+            >delete</i
+          >
+          Eliminar de la lista peliculas favoritas
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="files.js"></script>
+  </body>
+</html>

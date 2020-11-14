@@ -1,0 +1,87 @@
+body {
+  position: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+input[type="submit"] {
+  background-color: rgb(34, 243, 34);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 16px;
+}
+.select {
+  width: 200px;
+  height: 100px;
+  position: center;
+  display: justify;
+  margin-top: 12px;
+  border-width: 4px;
+}
+.column1 {
+  position: center;
+  display: inline-block;
+  align-items: center;
+  border-radius: 32px;
+  width: 500px;
+}
+.column3 {
+}
+.column2 {
+  position: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 32px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  position: center;
+  float: center;
+  align-items: center;
+}
+.eliminar {
+  background-color: rgb(34, 243, 34);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 16px;
+}
+.agregaradd {
+  background-color: rgb(34, 243, 34);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 16px;
+}
+.agregaraddd {
+  background-color: rgb(34, 243, 34);
+  border: none;
+  color: rgb(19, 2, 2);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 16px;
+}
+
